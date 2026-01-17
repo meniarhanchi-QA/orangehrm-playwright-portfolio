@@ -1,0 +1,12 @@
+{
+    "validUser": {
+        "username": "Admin",
+        "password": "admin123",
+        "expectedUrl": "dashboard"
+    },
+    "invalidUser": {
+        "username": "Admin",
+        "password": "wrongPassword",
+        "errorMessage": "Invalid credentials"
+    }
+}
