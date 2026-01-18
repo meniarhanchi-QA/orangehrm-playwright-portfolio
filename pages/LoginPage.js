@@ -16,9 +16,6 @@ class LoginPage {
         await this.page.fill(this.usernameInput, username);
         await this.page.fill(this.passwordInput, password);
         await this.page.click(this.loginButton);
-        
-        // 2. Instead of waiting for the whole network, wait for a specific Dashboard element
-        // This is a "Senior" best practice for stability.
         await this.page.waitForSelector(this.dashboardHeader);
     }
 }
